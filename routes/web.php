@@ -29,6 +29,7 @@ Route::post('/brand/store', 'BrandController@store');
 Route::get('/brand/create', 'BrandController@create');
 Route::get('/brand/edit/{id}', 'BrandController@edit');
 Route::get('/brand/delete/{id}', 'BrandController@delete');
+Route::post('/brand/update', 'BrandController@update');
 Route::post('/brand/update/{id}', 'BrandController@update');
 
 
