@@ -72,9 +72,8 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update($id, Request $request)
     {
-        $id = $request->idCategory;
         $category = Category::find($id);
         $category->category = $request->category;
         $category->save();
@@ -89,7 +88,8 @@ class CategoryController extends Controller
      */
     public function delete($id)
     {
-        $category = Category::find($id)->delete();
+        $category = Category::find($id);
+        $category->delete();
         return redirect('/category');
     }
 }

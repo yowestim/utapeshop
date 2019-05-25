@@ -22,16 +22,13 @@ Route::post('/category/store', 'CategoryController@store');
 Route::get('/category/create', 'CategoryController@create');
 Route::get('/category/edit/{id}', 'CategoryController@edit');
 Route::get('/category/delete/{id}', 'CategoryController@delete');
-Route::post('/category/update', 'CategoryController@update');
+Route::post('/category/update/{id}', 'CategoryController@update');
 
 Route::get('/brand','FrontController@brand' );
 Route::post('/brand/store', 'BrandController@store');
 Route::get('/brand/create', 'BrandController@create');
 Route::get('/brand/edit/{id}', 'BrandController@edit');
 Route::get('/brand/delete/{id}', 'BrandController@delete');
-<<<<<<< HEAD
-Route::post('/brand/update', 'BrandController@update');
-=======
 Route::post('/brand/update/{id}', 'BrandController@update');
 
 
@@ -56,4 +53,3 @@ Route::get('/confirmation','UserInterfaceController@confirmation');
 Route::get('/loginuser','UserInterfaceController@login');
 
 Route::get('/contact','UserInterfaceController@contact');
->>>>>>> master
