@@ -24,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($data as $item)
+        @foreach ($shoes as $item)
         <tr>
             <td>{{ $item->idShoes }}</td>
             <td>{{ $item->shoes }}</td>
