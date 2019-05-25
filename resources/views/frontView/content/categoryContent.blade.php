@@ -5,7 +5,7 @@ Category |
 @endsection
 
 @section('mainContent')
-	
+
 	<div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
@@ -27,11 +27,11 @@ Category |
 									<td>{{$i++}}</td>
 									<td>{{$item->category}}</td>
 									<td>
-									  
+
 											<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editCategoryModal" onclick="setId({{ $item->idCategory }},'{{ $item->category }}')">Edit</button>
 											<button type="button" class="btn btn-danger"><a href="{{url('category/delete',$item->idCategory)}}" style="color:#fff">Delete</a></button>
 									</td>
-									</tr>              
+									</tr>
 									@endforeach
 								</tbody>
 					</table>
@@ -73,8 +73,8 @@ Category |
 				<div class="modal-header">
 					<h4 class="modal-title" id="defaultModalLabel">Edit Category</h4>
 				</div>
-				<div class="modal-body" style="background:gray">	
-				
+				<div class="modal-body" style="background:gray">
+
 					<form method="POST" action="{{ url('category/update') }}" enctype="multipart/form-data" id="form">
 						@csrf
 						<input type="hidden" class="form-control" value="" readonly id="idCategoryUpdate" name="idCategory">
@@ -105,6 +105,3 @@ Category |
 		</script>
 	@endpush
 @endsection
-=======
-@endsection
->>>>>>> ardhi
