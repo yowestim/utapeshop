@@ -197,12 +197,8 @@
 				$(document).ready(function() {
         $('#example').DataTable();
     } );
-<<<<<<< HEAD
 	</script>
 	@stack('js')
-=======
-			</script>
->>>>>>> master
 </body>
 
 </html>

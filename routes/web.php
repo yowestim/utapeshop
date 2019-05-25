@@ -29,9 +29,6 @@ Route::post('/brand/store', 'BrandController@store');
 Route::get('/brand/create', 'BrandController@create');
 Route::get('/brand/edit/{id}', 'BrandController@edit');
 Route::get('/brand/delete/{id}', 'BrandController@delete');
-<<<<<<< HEAD
-Route::post('/brand/update', 'BrandController@update');
-=======
 Route::post('/brand/update/{id}', 'BrandController@update');
 
 
@@ -56,4 +53,3 @@ Route::get('/confirmation','UserInterfaceController@confirmation');
 Route::get('/loginuser','UserInterfaceController@login');
 
 Route::get('/contact','UserInterfaceController@contact');
->>>>>>> master
