@@ -43,7 +43,7 @@
 	<!-- end product Area -->
 
 	<!-- Start exclusive deal Area -->
-	
+
 	<!-- End exclusive deal Area -->
 
 	<!-- Start brand Area -->
@@ -220,9 +220,9 @@
 						</p>
 					</div>
 				</div>
-			
-			
-			
+
+
+
 			</div>
 			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
 				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -254,3 +254,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Utape
 </body>
 
 </html>
+{{-- <script>
+        $("#contactForm").on('submit', function(e){
+            e.preventDefault()
+            var username = $('#username').val();
+            var password = $('#password').val();
+            if(username == ""){
+               alert("Username harus di isi!!!");
+            } else if (password == "") {
+                alert("Password harus di isi!!!");
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "{{URL('/goLogin')}}",
+                    data: {
+                        _token: "{{csrf_token()}}",
+                        username: username,
+                        password: password
+                    },
+                    success: function (data) {
+
+                        // if(data == 1){
+                        //     alert("Berhasil Masuk")
+                        //     // window.location.replace("{{url('/home')}}");
+                        // }else{
+                        //     alert("Username dan Password tidak terdaftar");
+                        //   }
+                        console.log('>>>' & data)
+
+                    }
+                });
+            }
+
+        })
+    </script> --}}
