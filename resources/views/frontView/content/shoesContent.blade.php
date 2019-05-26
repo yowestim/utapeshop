@@ -9,7 +9,7 @@
     <div class="container-table100">
         <div class="wrap-table100">
             <div class="table100">
-                <button type="button" class="btn btn-warning"><a href="{{url('category/insert')}}" style="color:#fff">Add Shoes</a></button>
+                <button type="button" class="btn btn-warning"><a href="{{url('shoes/insert')}}" style="color:#fff">Add Shoes</a></button>
     <table id="example">
         <thead>
         <tr class="table100-head">
@@ -24,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($data as $item)
+        @foreach ($shoes as $item)
         <tr>
             <td>{{ $item->idShoes }}</td>
             <td>{{ $item->shoes }}</td>

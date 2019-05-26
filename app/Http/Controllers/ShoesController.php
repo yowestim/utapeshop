@@ -21,7 +21,7 @@ class ShoesController extends Controller
             ->select('shoes.*', 'categories.category', 'brands.brand', 'images.*')
             ->groupBy('shoes.idShoes')
             ->get();
-        return view('frontView.content.shoesContent', ['data' => $shoes]);
+        return view('frontView.content.shoesContent', ['shoes' => $shoes]);
         // return json_encode($shoes);
     }
 
@@ -62,14 +62,14 @@ class ShoesController extends Controller
         $image = DB::table('images')
                 ->where('images.idShoes', '=', $id)
                 ->get();
-        return view('crud.EditShoes', ['data' => $shoes, 'brand' => $brand, 'category' => $category, 'image' => $image]);
+        return view('crud/EditShoes', ['data' => $shoes, 'brand' => $brand, 'category' => $category, 'image' => $image]);
     }
 
     public function insert()
     {
         $brand = Brand::all();
         $category = Category::all();
-        return view('crud.AddShoes', ['brand' => $brand, 'category' => $category]);
+        return view('crud/AddShoes', ['brand' => $brand, 'category' => $category]);
     }
 
     public function update($id, Request $request)

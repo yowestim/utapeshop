@@ -7,30 +7,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
-	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+	<link rel="stylesheet" href="{{URL('assets/vendor/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{URL('assets/vendor/font-awesome/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{URL('assets/vendor/linearicons/style.css')}}">
+	<link rel="stylesheet" href="{{URL('assets/vendor/chartist/css/chartist-custom.css')}}">
 
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{URL('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="{{URL('assets/vendor/animate/animate.css')}}">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="{{URL('assets/vendor/select2/select2.min.css')}}">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="{{URL('assets/vendor/perfect-scrollbar/perfect-scrollbar.css')}}">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main1.css">
+	<link rel="stylesheet" type="text/css" href="{{URL('assets/css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{URL('assets/css/main1.css')}}">
 	<!--===============================================================================================-->
 	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="{{URL('assets/css/main.css')}}">
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="200x200" href="assets/img/utapesa.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{URL('assets/img/apple-icon.png')}}">
+	<link rel="icon" type="image/png" sizes="200x200" href="{{URL('assets/img/utapesa.png')}}">
 </head>
 
 <body>
@@ -58,22 +58,22 @@
 			</div>
 			<!-- END WRAPPER -->
 			<!-- Javascript -->
-			<script src="assets/vendor/jquery/jquery.min.js"></script>
-			<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-			<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-			<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-			<script src="assets/vendor/chartist/js/chartist.min.js"></script>
-			<script src="assets/scripts/klorofil-common.js"></script>
-			<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+			<script src="{{URL('assets/vendor/jquery/jquery.min.js')}}"></script>
+			<script src="{{URL('assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+			<script src="{{URL('assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+			<script src="{{URL('assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
+			<script src="{{URL('assets/vendor/chartist/js/chartist.min.js')}}"></script>
+			<script src="{{URL('assets/scripts/klorofil-common.js')}}"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 			<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 			<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 			<!--===============================================================================================-->
 			<!--===============================================================================================-->
-			<script src="assets/vendor/bootstrap/js/popper.js"></script>
+			<script src="{{URL('assets/vendor/bootstrap/js/popper.js')}}"></script>
 			<!--===============================================================================================-->
-			<script src="assets/vendor/select2/select2.min.js"></script>
+			<script src="{{URL('assets/vendor/select2/select2.min.js')}}"></script>
 			<!--===============================================================================================-->
-			<script src="assets/js/main.js"></script>
+			<script src="{{URL('assets/js/main.js')}}"></script>
 
 			<script>
 				$(function() {
@@ -197,7 +197,8 @@
 				$(document).ready(function() {
         $('#example').DataTable();
     } );
-			</script>
+	</script>
+	@stack('js')
 </body>
 
 </html>

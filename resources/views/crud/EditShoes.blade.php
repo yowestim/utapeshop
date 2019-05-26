@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tambah Sepatu</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-</head>
-<body>
+@extends('frontView.master')
+
+@section('title_area')
+    Edit | 
+@endsection
+
+@section('mainContent')
     <form action="/shoes/update/{{ $data->idShoes }}" enctype="multipart/form-data" method="POST">
         {{ csrf_field() }}
         Shoes : <input type="text" name="shoes" value="{{ $data->shoes }}"><br>
@@ -45,8 +42,7 @@
                         </div>
                       <input type="submit" value="Submit">
     </form>
-</body>
-</html>
+    @endsection
 <script type="text/javascript">
 
     $(document).ready(function() {
