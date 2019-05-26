@@ -31,4 +31,9 @@ Route::get('/brand/edit/{id}', 'BrandController@edit');
 Route::get('/brand/delete/{id}', 'BrandController@delete');
 Route::post('/brand/update', 'BrandController@update');
 
-Route::get('/shoes', 'FrontController@shoes');
+Route::get('/shoes', 'ShoesController@index');
+Route::get('/shoes/insert', 'ShoesController@insert');
+Route::post('/shoes/store', 'ShoesController@store');
+Route::get('/shoes/edit/{id}', 'ShoesController@edit');
+Route::get('/shoes/delete/{id}', 'ShoesController@delete');
+Route::post('/shoes/update/{id}', 'ShoesController@update');

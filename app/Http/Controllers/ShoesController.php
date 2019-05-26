@@ -21,7 +21,7 @@ class ShoesController extends Controller
             ->select('shoes.*', 'categories.category', 'brands.brand', 'images.*')
             ->groupBy('shoes.idShoes')
             ->get();
-        return view('frontView.content.shoesContent', ['data' => $shoes]);
+        return view('frontView.content.shoesContent', ['shoes' => $shoes]);
         // return json_encode($shoes);
     }
 
