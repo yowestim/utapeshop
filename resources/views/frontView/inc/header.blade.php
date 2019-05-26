@@ -1,7 +1,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="brand">
-        <a href="index.html"><img src="assets/img/logo-utapeshop.png" alt="Klorofil Logo" class="img-responsive logo"
+        <a href="{{URL('home')}}"><img src="{{URL('assets/img/logo-utapeshop.png')}}" alt="Klorofil Logo" class="img-responsive logo"
                 style="width : 139px; height :25px;"></a>
     </div>
     <div class="container-fluid">
@@ -48,7 +48,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png"
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{URL('assets/img/user.png')}}"
                             class="img-circle" alt="Avatar"> <span>Samuel</span> <i
                             class="icon-submenu lnr lnr-chevron-down"></i></a>
                     <ul class="dropdown-menu">
