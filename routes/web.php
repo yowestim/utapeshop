@@ -37,3 +37,18 @@ Route::post('/shoes/store', 'ShoesController@store');
 Route::get('/shoes/edit/{id}', 'ShoesController@edit');
 Route::get('/shoes/delete/{id}', 'ShoesController@delete');
 Route::post('/shoes/update/{id}', 'ShoesController@update');
+
+/*-- USER INTERFACE AREA -- */
+Route::get('/homeuser','UserInterfaceController@index');
+
+Route::get('/categoryuser','UserInterfaceController@categoryshop');
+
+Route::get('/checkout','UserInterfaceController@checkoutshoes');
+
+Route::get('/cart','UserInterfaceController@cart');
+
+Route::get('/confirmation','UserInterfaceController@confirmation');
+
+Route::get('/loginuser','UserInterfaceController@login');
+
+Route::get('/contact','UserInterfaceController@contact');
