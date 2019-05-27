@@ -22,7 +22,7 @@ Route::post('/category/store', 'CategoryController@store');
 Route::get('/category/create', 'CategoryController@create');
 Route::get('/category/edit/{id}', 'CategoryController@edit');
 Route::get('/category/delete/{id}', 'CategoryController@delete');
-Route::post('/category/update/{id}', 'CategoryController@update');
+Route::post('/category/update', 'CategoryController@update');
 
 Route::get('/brand','FrontController@brand' );
 Route::post('/brand/store', 'BrandController@store');

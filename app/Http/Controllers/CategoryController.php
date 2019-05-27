@@ -72,8 +72,9 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update($id, Request $request)
+    public function update(Request $request)
     {
+        $id = $request->idCategory;
         $category = Category::find($id);
         $category->category = $request->category;
         $category->save();

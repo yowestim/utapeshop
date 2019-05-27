@@ -76,7 +76,7 @@ Brand |
 			
 				<form method="POST" action="{{ url('brand/update') }}" enctype="multipart/form-data" id="form">
 					@csrf
-					<input type="hidden" class="form-control" value="" readonly id="idBrandUpdate" name="idBrandUpdate">
+					<input type="hidden" class="form-control" value="" readonly id="idBrandUpdate" name="idBrand">
 					<div class="row" style="margin-bottom:20px">
 						<div class="col-md-12">
 							<input type="text" placeholder="Brand Name" class="form-control"  name="brand" id="brandUpdate">
