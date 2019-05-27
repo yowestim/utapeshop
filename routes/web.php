@@ -30,11 +30,6 @@ Route::get('/brand/create', 'BrandController@create');
 Route::get('/brand/edit/{id}', 'BrandController@edit');
 Route::get('/brand/delete/{id}', 'BrandController@delete');
 Route::post('/brand/update', 'BrandController@update');
-<<<<<<< HEAD
-=======
-Route::post('/brand/update/{id}', 'BrandController@update');
-
->>>>>>> rizki
 
 Route::get('/shoes', 'ShoesController@index');
 Route::get('/shoes/insert', 'ShoesController@insert');
@@ -57,8 +52,4 @@ Route::get('/confirmation','UserInterfaceController@confirmation');
 Route::get('/loginuser','UserInterfaceController@login');
 Route::post('/goLogin', 'UserController@postLogin');
 
-<<<<<<< HEAD
 Route::get('/contact','UserInterfaceController@contact');
-=======
-Route::get('/contact','UserInterfaceController@contact');
->>>>>>> rizki
