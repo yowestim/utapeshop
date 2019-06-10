@@ -13,12 +13,7 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Shop Category page</h1>
-					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Fashon Category</a>
-					</nav>
+					<h1>SHOP PAGE</h1>
 				</div>
 			</div>
 		</div>
@@ -31,10 +26,10 @@
 					<div class="head">Browse Categories</div>
 					<ul class="main-categories">
 						<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable"><span
-								 class="lnr lnr-arrow-right"></span>Fruits and Vegetables<span class="number">(53)</span></a>
+								 class="lnr lnr-arrow-right"></span>Sport<span class="number">(53)</span></a>
 							<ul class="collapse" id="fruitsVegetable" data-toggle="collapse" aria-expanded="false" aria-controls="fruitsVegetable">
-								<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-								<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
+								<li class="main-nav-list child"><a href="#">Casual<span class="number">(13)</span></a></li>
+								<li class="main-nav-list child"><a href="#">Formal<span class="number">(09)</span></a></li>
 								<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
 								<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
 								<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
