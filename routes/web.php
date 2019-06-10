@@ -50,5 +50,6 @@ Route::get('/cart','UserInterfaceController@cart');
 Route::get('/confirmation','UserInterfaceController@confirmation');
 
 Route::get('/loginuser','UserInterfaceController@login');
+Route::post('/goLogin', 'UserController@postLogin');
 
 Route::get('/contact','UserInterfaceController@contact');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class UserInterfaceController extends Controller
@@ -32,5 +33,9 @@ class UserInterfaceController extends Controller
 
     public function contact(){
         return view ('usersView.content.contactPerson');
+    }
+    public function register()
+    {
+        return view ('usersView.content.register');
     }
 }
