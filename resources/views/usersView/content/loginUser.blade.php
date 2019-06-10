@@ -10,10 +10,10 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Login/Register</h1>
+					<h1>Login</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Login/Register</a>
+						<a href="category.html">Login</a>
 					</nav>
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 						<div class="hover">
 							<h4>Don't have an account yet?</h4>
 							<p>Register Yourself</p>
-							<a class="primary-btn" href="registration.html">Create an Account</a>
+							<a class="primary-btn" href="{{url('register')}}">Create an Account</a>
 						</div>
 					</div>
 				</div>
