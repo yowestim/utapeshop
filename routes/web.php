@@ -50,6 +50,11 @@ Route::get('/cart','UserInterfaceController@cart');
 Route::get('/confirmation','UserInterfaceController@confirmation');
 
 Route::get('/loginuser','UserInterfaceController@login');
-Route::post('/goLogin', 'UserController@postLogin');
 
 Route::get('/contact','UserInterfaceController@contact');
+
+Route::get('/register','UserInterfaceController@register');
+
+
+/* ADMIN INTERFACE AREA */
+Route::post('/goLogin', 'UserController@postLogin');
