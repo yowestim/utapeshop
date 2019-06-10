@@ -34,4 +34,8 @@ class UserInterfaceController extends Controller
     public function contact(){
         return view ('usersView.content.contactPerson');
     }
+    public function register()
+    {
+        return view ('usersView.content.register');
+    }
 }
