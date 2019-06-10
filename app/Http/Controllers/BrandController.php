@@ -72,8 +72,9 @@ class BrandController extends Controller
      * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function update($id, Request $request)
+    public function update(Request $request)
     {
+        $id = $request->idBrand;
         $brand = Brand::find($id);
         $brand->brand = $request->brand;
         $brand->save();

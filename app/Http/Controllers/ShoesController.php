@@ -18,10 +18,10 @@ class ShoesController extends Controller
             ->join('categories', 'shoes.idCategory', '=', 'categories.idCategory')
             ->join('brands', 'shoes.idBrand', '=', 'brands.idBrand')
             ->leftJoin('images', 'images.idShoes', '=', 'shoes.idShoes')
-            ->select('shoes.*', 'categories.category', 'brands.brand', 'images.*')
+            ->select('shoes.*', 'categories.category', 'brands.brand', 'images.fileName', 'images.idImages')
             ->groupBy('shoes.idShoes')
             ->get();
-        return view('frontView.content.shoesContent', ['data' => $shoes]);
+        return view('frontView.content.shoesContent', ['shoes' => $shoes]);
         // return json_encode($shoes);
     }
 
@@ -47,7 +47,7 @@ class ShoesController extends Controller
         return redirect('/shoes');
     }
 
-    public function destroy($id)
+    public function delete($id)
     {
         $shoes = Shoes::find($id);
         $shoes->delete();
