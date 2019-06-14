@@ -24,7 +24,16 @@ class UserInterfaceController extends Controller
     }
 
     public function categoryshop(){
-        return view ('usersView.content.categoryUserContent');
+        $shoes = DB::table('shoes')
+            ->join('categories', 'shoes.idCategory', '=', 'categories.idCategory')
+            ->join('brands', 'shoes.idBrand', '=', 'brands.idBrand')
+            ->leftJoin('images', 'images.idShoes', '=', 'shoes.idShoes')
+            ->select('shoes.*', 'categories.category', 'brands.brand', 'images.fileName', 'images.idImages')
+            ->groupBy('shoes.idShoes')
+            ->get();
+        $category = DB::table('categories')->get();
+        $brand = DB::table('brands')->get();
+        return view ('usersView.content.categoryUserContent', ['shoes' => $shoes, 'category' => $category, 'brand' => $brand]);
     }
 
     public function checkoutshoes(){
