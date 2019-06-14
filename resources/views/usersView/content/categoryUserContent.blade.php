@@ -26,9 +26,7 @@
 					<div class="head">Browse Categories</div>
 					<ul class="main-categories">
 						@foreach ($category as $item)
-						<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-							<span class="lnr lnr-arrow-right"></span>{{ $item->category }}</a>
-						</li>
+						<li class="filter-list"><input class="pixel-radio" type="radio" id="{{ $item->idCategory }}" name="brand"><label for="{{ $item->category }}">{{ $item->category }}</label></li>
 						@endforeach
 					</ul>
 				</div>
