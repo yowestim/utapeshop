@@ -1,7 +1,7 @@
 @extends('usersView.masterUser')
 
 @section('title')
-    Register 
+    Register
 @endsection
 
 @section('mainContent')
@@ -20,28 +20,29 @@
 		</div>
 	</section>
 	<!-- End Banner Area -->
-    
+
 <section class="checkout_area section_gap">
         <div class="container">
              <div class="billing_details">
                 <div class="row">
                     <div class="col-lg-8">
                         <h3>Register Yourself</h3>
-                        <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                        <form class="row contact_form" action="{{URL('/postregister')}}" method="post" novalidate="novalidate">
+                            {{ csrf_field() }}
                             <div class="col-md-6 form-group p_star">
                                 <input type="text" class="form-control" id="name" name="name"  placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
-                                
+
                             </div>
-                         
+
                             <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">  
-                            </div>
-                            <div class="col-md-6 form-group p_star">
-                                <input type="password" class="form-control" id="password" name="password"  placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">                               
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">                                
-                            </div>                          
+                                <input type="password" class="form-control" id="password" name="password"  placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
+                            </div>
                             <div class="col-md-12 form-group p_star">
                                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
                             </div>
@@ -50,15 +51,15 @@
                             </div>
                             <div class="col-md-12 form-group">
 								<div class="col-md-12 form-group">
-									<button type="submit" value="submit" class="primary-btn">Register</button>	
+									<button type="submit" value="submit" class="primary-btn">Register</button>
 								</div>
                             </div>
                         </form>
                     </div>
-                  
+
                 </div>
             </div>
-         
+
         </div>
     </section>
 @endsection
