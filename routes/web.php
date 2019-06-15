@@ -54,6 +54,7 @@ Route::get('/loginuser','UserInterfaceController@login');
 Route::get('/contact','UserInterfaceController@contact');
 
 Route::get('/register','UserInterfaceController@register');
+Route::post('/postregister', 'UserController@postRegister');
 
 
 /* ADMIN INTERFACE AREA */
