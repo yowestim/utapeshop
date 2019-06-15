@@ -196,7 +196,7 @@
                             <div class="product-details" style="position: absolute; bottom: 0; ">
                                 <h6>{{ $item->shoes }}</h6>
                                 <div class="price">
-                                    <h6>{{ $item->price }}</h6>
+                                    <h6>Rp. {{ number_format($item->price,0,',','.') }}</h6>
                                 </div>
                                 <div class="prd-bottom">
     

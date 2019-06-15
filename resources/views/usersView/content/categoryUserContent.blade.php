@@ -35,8 +35,6 @@
 					<div class="common-filter">
 						<div class="head">Brands</div>
 						<form action="#">
-							
-
 							<ul>
 								@foreach ($brand as $item)
 							<li class="filter-list"><input class="pixel-radio" type="radio" id="{{ $item->idBrand }}" name="brand"><label for="{{ $item->brand }}">{{ $item->brand }}</label></li>
