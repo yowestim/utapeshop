@@ -104,8 +104,4 @@ Category |
 			}
 		</script>
 	@endpush
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> rizki
