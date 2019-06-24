@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
 use Hash;
-
+use Session;
 class UserController extends Controller
 {
     public function postLogin(Request $request)
@@ -16,13 +16,13 @@ class UserController extends Controller
             $password = $request->password;
 
         $data = User::where('username',$username)->first();
-        if($data){ //apakah email tersebut ada atau tidak
+        if($data){
             if(Hash::check($password,$data->password)){
-                // Session::put('buyer_name',$data->buyer_name);
-                // Session::put('username',$data->username);
-                // Session::put('id_buyer',$data->id_buyer);
-                // Session::put('login_buyer',TRUE);
-                // return redirect('buyer/home');
+                Session::put('username',$data->username);
+                Session::put('type', $data->type);
+                Session::put('idUser',$data->id);
+                Session::put('login_user',TRUE);
+                return redirect('/homeuser');
                 echo 1;
             }
             else{
