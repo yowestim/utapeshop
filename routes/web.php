@@ -41,9 +41,9 @@ Route::post('/shoes/update/{id}', 'ShoesController@update');
 /*-- USER INTERFACE AREA -- */
 Route::get('/homeuser','UserInterfaceController@index');
 
-Route::get('/categoryuser','UserInterfaceController@categoryshop');
+Route::get('/categoryuser','UserInterfaceController@categoryShop');
 
-Route::get('/checkout','UserInterfaceController@checkoutshoes');
+Route::get('/checkout','UserInterfaceController@checkoutShoes');
 
 Route::get('/cart','UserInterfaceController@cart');
 
