@@ -13,7 +13,7 @@
     <table id="example">
         <thead>
         <tr class="table100-head">
-            <th class="column1">Id</th>
+            <th class="column1">No</th>
             <th class="column1">Shoes</th>
             <th class="column1">Brand</th>
             <th class="column1">Category</th>
@@ -24,9 +24,10 @@
         </tr>
     </thead>
     <tbody>
+        <input type="hidden" value="{{$i = 1}}">
         @foreach ($shoes as $item)
         <tr>
-            <td>{{ $item->idShoes }}</td>
+            <td>{{ $i++ }}</td>
             <td>{{ $item->shoes }}</td>
             <td>{{ $item->brand }}</td>
             <td>{{ $item->category }}</td>
