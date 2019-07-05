@@ -6,7 +6,7 @@
 
 @section('mainContent')
 <!-- start banner Area -->
-<section class="banner-area">
+<section class="banner-area" style="margin-top:50px">
     <div class="container">
         <div class="row fullscreen align-items-center justify-content-start">
             <div class="col-lg-12">
@@ -15,9 +15,8 @@
                     <div class="row single-slide align-items-center d-flex">
                         <div class="col-lg-5 col-md-6">
                             <div class="banner-content">
-                                <h1>Nike New <br>Collection!</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                <h1>{{ $shoes[1]->shoes }}</h1>
+                            <h4>Rp. {{ number_format($shoes[1]->price,0,',','.') }}</h4>
                                 <div class="add-bag d-flex align-items-center">
                                     <a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
                                     <span class="add-text text-uppercase">Add to Bag</span>
@@ -26,7 +25,7 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="banner-img">
-                                <img class="img-fluid" src="user/img/banner/curry2.png" alt="">
+                                <img class="img-fluid" src="{{URL::asset('/images/').'/'.$shoes[1]->fileName}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -34,9 +33,8 @@
                     <div class="row single-slide align-items-center d-flex">
                         <div class="col-lg-5 col-md-6">
                             <div class="banner-content">
-                                <h1>Nike New <br>Collection!</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            <h1>{{ $shoes[0]->shoes }}</h1>
+                            <h4>Rp. {{ number_format($shoes[0]->price,0,',','.') }}</h4>
                                 <div class="add-bag d-flex align-items-center">
                                     <a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
                                     <span class="add-text text-uppercase">Add to Bag</span>
@@ -45,7 +43,7 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="banner-img">
-                                <img class="img-fluid" src="user/img/banner/curry1.png" alt="">
+                                <img class="img-fluid" src="{{URL::asset('/images/').'/'.$shoes[0]->fileName}}" alt="" style="position: relative;">
                             </div>
                         </div>
                     </div>
@@ -54,12 +52,7 @@
         </div>
     </div>
 </section>
-<!-- End banner Area -->
-
-
-<!-- start product Area -->
 <section class="owl-carousel">
-    <!-- single product slide -->
     <div>
         <div class="container">
             <div class="row justify-content-center">
@@ -105,5 +98,4 @@
         </div>
     </div>
 </section>
-
 @endsection
