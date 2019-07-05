@@ -19,8 +19,13 @@
                         <li class="nav-item"><a class="nav-link" href="{{URL('categoryuser')}}">Shop Category</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{URL('checkout')}}">Product Checkout</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{URL('confirmation')}}">Confirmation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{URL('contact')}}">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{URL('loginuser')}}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{URL('loginuser')}}">@if (Session::get('login_user'))
+                            {{ Session::get('username') }}
+                                
+                            @else
+                            {{'Login'}}
+                        @endif</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item"><a href="{{URL('cart')}}" class="cart"><span class="ti-bag"></span></a></li>
