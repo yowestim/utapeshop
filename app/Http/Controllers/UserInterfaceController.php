@@ -31,11 +31,15 @@ class UserInterfaceController extends Controller
         return view ('usersView.content.loginUser');
     }
 
-    public function contact(){
-        return view ('usersView.content.contactPerson');
+    public function profile(){
+        return view ('usersView.content.profileUser');
     }
     public function register()
     {
         return view ('usersView.content.register');
+    }
+
+    public function detail(){
+        return view('usersView.content.shopDetail');
     }
 }
