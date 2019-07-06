@@ -24,4 +24,6 @@ class TransactionController extends Controller
         $cart->save();
         return redirect('cart');
     }
+
+   
 }

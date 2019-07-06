@@ -8,6 +8,8 @@ use App\Shoes;
 use App\Category;
 use App\Brand;
 use App\Image;
+use App\Cart;
+use Session;
 use Illuminate\Support\Facades\DB;
 
 class UserInterfaceController extends Controller
@@ -52,7 +54,12 @@ class UserInterfaceController extends Controller
     }
 
     public function cart(){
-        return view ('usersView.content.cartUserContent');
+            $cart = DB::table('carts')
+                ->join('shoes', 'carts.isShoes', '=', 'shoes.idShoes')
+                ->where('carts.idUser', '=', Session::get('idUser'))
+                ->get();
+        return view ('usersView.content.cartUserContent', ['cart' => $cart]);
+        // return json_encode($cart);
     }
 
     public function confirmation(){
