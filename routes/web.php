@@ -61,3 +61,6 @@ Route::post('/postregister', 'UserController@postRegister');
 
 /* ADMIN INTERFACE AREA */
 Route::post('/goLogin', 'UserController@postLogin');
+
+//Transaction
+Route::get('/addToCart', 'TransactionController@addToCart');

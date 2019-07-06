@@ -78,7 +78,7 @@ id="category"
                 </div>
             </div>
         </div>
-        <div class="col-xl-9 col-lg-8 col-md-7">
+        {{-- <div class="col-xl-9 col-lg-8 col-md-7">
             <!-- Start Filter Bar -->
             <div class="filter-bar d-flex flex-wrap align-items-center">
                 <div class="sorting">
@@ -109,8 +109,8 @@ id="category"
             <!-- Start Best Seller -->
             <section class="lattest-product-area pb-40 category-list">
                 <div class="row">
-                    <!-- single product -->
-                    @foreach ($shoes as $item)
+                    <!-- single product --> --}}
+                    {{-- @foreach ($shoes as $item)
                     <div class="col-lg-3 col-md-6">
                         <div class="single-product" style="height:350px;">
                             <img class="img-fluid" src="{{URL::asset('/images/').'/'.$item->fileName}}" alt=""

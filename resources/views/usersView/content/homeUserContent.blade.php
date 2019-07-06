@@ -1,7 +1,7 @@
 @extends('usersView.masterUser')
 
 @section('title')
-    Home | 
+    Home |
 @endsection
 
 @section('mainContent')
@@ -17,8 +17,8 @@
                             <div class="banner-content">
                                 <h1>{{ $shoes[1]->shoes }}</h1>
                             <h4>Rp. {{ number_format($shoes[1]->price,0,',','.') }}</h4>
-                                <div class="add-bag d-flex align-items-center">
-                                    <a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
+                                <div class="add-bag d-flex align-items-center" onclick="addToCart({{$shoes[1]->idShoes}})">
+                                    <a class="add-btn"><span class="lnr lnr-cross"></span></a>
                                     <span class="add-text text-uppercase">Add to Bag</span>
                                 </div>
                             </div>
@@ -35,8 +35,8 @@
                             <div class="banner-content">
                             <h1>{{ $shoes[0]->shoes }}</h1>
                             <h4>Rp. {{ number_format($shoes[0]->price,0,',','.') }}</h4>
-                                <div class="add-bag d-flex align-items-center">
-                                    <a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
+                                <div class="add-bag d-flex align-items-center" onclick="addToCart({{$shoes[0]->idShoes}})">
+                                    <a class="add-btn"><span class="lnr lnr-cross"></span></a>
                                     <span class="add-text text-uppercase">Add to Bag</span>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                                     <h6>Rp. {{ number_format($item->price,0,',','.') }}</h6>
                                 </div>
                                 <div class="prd-bottom">
-    
+
                                     <a href="" class="social-info" style="width: 300%">
                                         <span class="lnr lnr-tag"></span>
                                         <p class="hover-text" style="width: 200%">Brand : {{ $item->brand }}</p>
@@ -104,3 +104,4 @@
     </div>
 </section>
 @endsection
+
