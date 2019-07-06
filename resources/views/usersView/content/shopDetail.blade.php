@@ -22,17 +22,17 @@
 		<div class="container">
 			<div class="row s_product_inner">
 				<div class="col-lg-6">
-					<div>
+					<div class="s_Product_carousel">
 						@foreach ($image as $item)
 						<div class="single-prd-item">
-							<img class="img-fluid" src="{{URL::asset('/images/').'/'.$item->fileName}}" alt="">
+							<img class="img-fluid" src="{{URL::asset('/images/').'/'.$image[0]->fileName}}" alt="">
 						</div>
 						@endforeach
 					
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-5 offset-lg-1">
+				<div class="col-lg-6 offset-lg-1">
 					<div class="s_product_text">
 					<h3>{{$data->shoes}}</h3>
 						<h2>Rp. {{ number_format($data->price,0,',','.') }}</h2>
