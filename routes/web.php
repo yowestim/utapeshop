@@ -51,7 +51,9 @@ Route::get('/confirmation','UserInterfaceController@confirmation');
 
 Route::get('/loginuser','UserInterfaceController@login');
 
-Route::get('/contact','UserInterfaceController@contact');
+Route::get('/profile','UserInterfaceController@profile');
+
+Route::get('/detail','UserInterfaceController@detail');
 
 Route::get('/register','UserInterfaceController@register');
 Route::post('/postregister', 'UserController@postRegister');
@@ -59,3 +61,6 @@ Route::post('/postregister', 'UserController@postRegister');
 
 /* ADMIN INTERFACE AREA */
 Route::post('/goLogin', 'UserController@postLogin');
+
+//Transaction
+Route::get('/addToCart', 'TransactionController@addToCart');

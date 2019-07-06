@@ -20,7 +20,7 @@ class UserController extends Controller
             if(Hash::check($password,$data->password)){
                 Session::put('username',$data->username);
                 Session::put('type', $data->type);
-                Session::put('idUser',$data->id);
+                Session::put('idUser',$data->idUser);
                 Session::put('login_user',TRUE);
                 return redirect('/homeuser');
                 echo 1;

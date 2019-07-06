@@ -254,6 +254,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Utape
 </body>
 
 </html>
+<script>
+function addToCart($idShoes) {
+        $.ajax({
+            type: "get",
+            url: "{{URL('/addToCart')}}",
+            data: {
+                _token : "{{csrf_token()}}",
+                idShoes : $idShoes,
+                qty : 1
+            },
+            success: function(response){
+                //if request if made successfully then the response represent the data
+                alert('ok sip')
+            }
+        });
+    }
+</script>
 {{-- <script>
         $("#contactForm").on('submit', function(e){
             e.preventDefault()
@@ -288,3 +305,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Utape
 
         })
     </script> --}}
+{{-- <script>
+
+</script> --}}
