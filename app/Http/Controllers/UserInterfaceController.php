@@ -71,7 +71,13 @@ class UserInterfaceController extends Controller
         return view ('usersView.content.register');
     }
 
-    public function detail(){
-        return view('usersView.content.shopDetail');
+    public function detail($id){
+        $shoes = Shoes::find($id);
+        $brand = Brand::find($shoes->idBrand);
+        $category = Category::find($shoes->idCategory);
+        $image = DB::table('images')
+                ->where('images.idShoes', '=', $id)
+                ->get();
+        return view('usersView.content.shopDetail', ['data' => $shoes, 'brand' => $brand, 'category' => $category, 'image' => $image]);
     }
 }

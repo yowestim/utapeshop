@@ -53,7 +53,7 @@ Route::get('/loginuser','UserInterfaceController@login');
 
 Route::get('/profile','UserInterfaceController@profile');
 
-Route::get('/detail','UserInterfaceController@detail');
+Route::get('/detail/{id}','UserInterfaceController@detail');
 
 Route::get('/register','UserInterfaceController@register');
 Route::post('/postregister', 'UserController@postRegister');
