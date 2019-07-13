@@ -23,24 +23,23 @@
 			<div class="row s_product_inner">
 				<div class="col-lg-6">
 					<div class="s_Product_carousel">
+						@foreach ($image as $item)
 						<div class="single-prd-item">
-							<img class="img-fluid" src="user/img/banner/curry2.png" alt="">
+							<img class="img-fluid" src="{{URL::asset('/images/').'/'.$image[0]->fileName}}" alt="">
 						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid" src="user/img/banner/curry2.png" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid" src="user/img/banner/curry2.png" alt="">
+						@endforeach
+					
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-5 offset-lg-1">
+				<div class="col-lg-6 offset-lg-1">
 					<div class="s_product_text">
-						<h3>Faded SkyBlu Denim Jeans</h3>
-						<h2>$149.99</h2>
+					<h3>{{$data->shoes}}</h3>
+						<h2>Rp. {{ number_format($data->price,0,',','.') }}</h2>
 						<ul class="list">
-							<li><a class="active" href="#"><span>Category</span> : Household</a></li>
-							<li><a href="#"><span>Availibility</span> : In Stock</a></li>
+							<li><b>Category</b> : {{ $category->category }}</li>
+							<li><b>Brand</b> : {{ $brand->brand }}</li>
+							<li><b>Availibility</b> : {{$data->stock}}</li>
 						</ul>
 						<p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for
 							something that can make your interior look awesome, and at the same time give you the pleasant warm feeling

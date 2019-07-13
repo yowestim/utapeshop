@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <script src="user/js/vendor/jquery-2.2.4.min.js"></script>
+
         <!-- Styles -->
         <style>
             html, body {

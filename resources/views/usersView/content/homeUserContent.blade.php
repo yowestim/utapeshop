@@ -88,7 +88,12 @@
                                     <a href="" class="social-info" style="width: 300%">
                                         <span class="lnr lnr-briefcase"></span>
                                         <p class="hover-text" style="width: 200%">Stock : {{ $item->stock }}</p>
+                                    </a><br>
+                                <a href="detail/{{ $item->idShoes }}" class="social-info" style="width: 300%">
+                                        <span class="lnr lnr-cart"></span>
+                                        <p class="hover-text" style="width: 200%">Show More</p>
                                     </a>
+                                    
                                 </div>
                             </div>
                         </div>

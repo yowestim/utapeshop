@@ -19,17 +19,17 @@
 	<!--
 		CSS
 		============================================= -->
-	<link rel="stylesheet" href="user/css/linearicons.css">
-	<link rel="stylesheet" href="user/css/font-awesome.min.css">
-	<link rel="stylesheet" href="user/css/themify-icons.css">
-	<link rel="stylesheet" href="user/css/bootstrap.css">
-	<link rel="stylesheet" href="user/css/owl.carousel.css">
-	<link rel="stylesheet" href="user/css/nice-select.css">
-	<link rel="stylesheet" href="user/css/nouislider.min.css">
-	<link rel="stylesheet" href="user/css/ion.rangeSlider.css" />
-	<link rel="stylesheet" href="user/css/ion.rangeSlider.skinFlat.css" />
-	<link rel="stylesheet" href="user/css/magnific-popup.css">
-	<link rel="stylesheet" href="user/css/main.css">
+	<link rel="stylesheet" href="{{URL('user/css/linearicons.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/themify-icons.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/bootstrap.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/owl.carousel.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/nice-select.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/nouislider.min.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/ion.rangeSlider.css')}}" />
+	<link rel="stylesheet" href="{{URL('user/css/ion.rangeSlider.skinFlat.css')}}" />
+	<link rel="stylesheet" href="{{URL('user/css/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{URL('user/css/main.css')}}">
 </head>
 
 <body @yield('body')>
@@ -236,21 +236,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Utape
 
 	<!-- End footer Area -->
 
-	<script src="user/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="{{URL('user/js/vendor/jquery-2.2.4.min.js')}}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.user/js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	 crossorigin="anonymous"></script>
-	<script src="user/js/vendor/bootstrap.min.js"></script>
-	<script src="user/js/jquery.ajaxchimp.min.js"></script>
-	<script src="user/js/jquery.nice-select.min.js"></script>
-	<script src="user/js/jquery.sticky.js"></script>
-	<script src="user/js/nouislider.min.js"></script>
-	<script src="user/js/countdown.js"></script>
-	<script src="user/js/jquery.magnific-popup.min.js"></script>
-	<script src="user/js/owl.carousel.min.js"></script>
+	<script src="{{URL('user/js/vendor/bootstrap.min.js')}}"></script>
+	<script src="{{URL('user/js/jquery.ajaxchimp.min.js')}}"></script>
+	<script src="{{URL('user/js/jquery.nice-select.min.js')}}"></script>
+	<script src="{{URL('user/js/jquery.sticky.js')}}"></script>
+	<script src="{{URL('user/js/nouislider.min.js')}}"></script>
+	<script src="{{URL('user/js/countdown.js')}}"></script>
+	<script src="{{URL('user/js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{URL('user/js/owl.carousel.min.js')}}"></script>
 	<!--gmaps Js-->
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script> -->
-	<script src="user/js/gmaps.min.js"></script>
-	<script src="user/js/main.js"></script>
+	<script src="{{URL('user/js/gmaps.min.js')}}"></script>
+	<script src="{{URL('user/js/main.js')}}"></script>
 </body>
 
 </html>
